@@ -14,8 +14,6 @@
     {
       "renderer": "region",
       "name": "us-east-1",
-      "x": 200,
-      "top": 200,
       "displayName": "US-EAST-1",
       "updated": 1477690448572,
       "nodes": [

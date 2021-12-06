@@ -14,15 +14,12 @@
     {
       "renderer": "region",
       "name": "us-east-1",
-      "x": 200,
-      "top": 200,
       "displayName": "US-EAST-1",
       "updated": 1477690448572,
       "nodes": [
         {
           "name": "viraemic",
-	  "node_type": "azure",
-	  "class": "warning",
+	  "node_type": "storage",
           "metadata": {
             "streaming": 1
           },
@@ -90,10 +87,7 @@
               }
             }
           ],
-          "renderer": "focusedChild",
-	  "notices": [
-		  {"severity": 1, "title": "notice test 5"}
-	  ]
+          "renderer": "focusedChild"
         },
         {
           "name": "foetal",
@@ -113,7 +107,6 @@
         },
         {
           "name": "buglers",
-	  "node_type": "pipe",
           "metadata": {
             "streaming": 1
           },
@@ -780,7 +773,6 @@
         },
         {
           "name": "microparasites",
-	  "node_type": "user",
           "metadata": {
             "streaming": 1
           },
@@ -808,10 +800,7 @@
               }
             }
           ],
-          "renderer": "focusedChild",
-	  "notices": [
-		  {"severity": 1, "title": "notice test 3"}
-	  ]
+          "renderer": "focusedChild"
         },
         {
           "name": "commerce",
@@ -826,16 +815,11 @@
               }
             }
           ],
-          "renderer": "focusedChild",
-	  "notices": [
-		  {"severity": 2, "title": "notice test 2"}
-	  ]
+          "renderer": "focusedChild"
         },
         {
           "name": "alignment",
-	  "node_type": "service",
-	  "class": "danger",
-	  "metadata": {
+          "metadata": {
             "streaming": 1
           },
           "nodes": [
@@ -847,10 +831,7 @@
               }
             }
           ],
-          "renderer": "focusedChild",
-	  "notices": [
-		  {"severity": 1, "title": "notice test 1"}
-	  ]
+          "renderer": "focusedChild"
         },
         {
           "name": "methadone",
@@ -926,7 +907,6 @@
         },
         {
           "name": "karroos",
-	  "node_type": "users",
           "metadata": {
             "streaming": 1
           },
@@ -939,10 +919,7 @@
               }
             }
           ],
-          "renderer": "focusedChild",
-	  "notices": [
-		  {"severity": 0, "title": "notice test 6"}
-	  ]
+          "renderer": "focusedChild"
         },
         {
           "name": "accounts",
@@ -1144,17 +1121,11 @@
         },
         {
           "name": "bypath",
-	  "node_type": "storage",
-	  "class": "warning",
           "metadata": {
             "streaming": 1
           },
           "nodes": [],
-          "renderer": "focusedChild",
-	  "notices": [
-		  {"severity": 2, "title": "notice test 4"}
-	  ]
-	  
+          "renderer": "focusedChild"
         },
         {
           "name": "hydroxyureas",
@@ -1228,8 +1199,6 @@
         },
         {
           "name": "appropriable",
-	  "node_type": "default",
-	  "class": "danger",
           "metadata": {
             "streaming": 1
           },

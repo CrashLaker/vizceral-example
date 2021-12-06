@@ -152,7 +152,11 @@ class TrafficFlow extends React.Component {
 
   beginSampleData () {
     this.traffic = { nodes: [], connections: [] };
-    request.get('sample_data.json')
+    // request.get('sample_data.json')
+    // request.get('sample_data_region_only.json')
+    // request.get('sample_data_simple.json')
+    // request.get('sample_data_with_shapes_and_notices.json')
+    request.get('sample_data_simple2.json')
       .set('Accept', 'application/json')
       .end((err, res) => {
         if (res && res.status === 200) {
@@ -347,13 +351,13 @@ class TrafficFlow extends React.Component {
         <div className="subheader">
           {showBreadcrumbs && <Breadcrumbs rootTitle={breadcrumbsRoot} navigationStack={this.state.currentView || []} navigationCallback={this.navigationCallback} />}
           {showBreadcrumbs && <UpdateStatus status={this.state.regionUpdateStatus} baseOffset={this.state.timeOffset} warnThreshold={180000} />}
-          <div style={{ float: 'right', paddingTop: '4px' }}>
+          {/* <div style={{ float: 'right', paddingTop: '4px' }}>
             { (!focusedNode && matches) && <Locator changeCallback={this.locatorChanged} searchTerm={this.state.searchTerm} matches={matches} clearFilterCallback={this.filtersCleared} /> }
             <OptionsPanel title="Filters"><FilterControls /></OptionsPanel>
             <OptionsPanel title="Display"><DisplayOptions options={this.state.displayOptions} changedCallback={this.displayOptionsChanged} /></OptionsPanel>
             <OptionsPanel title="Physics"><PhysicsOptions options={this.state.currentGraph_physicsOptions} changedCallback={this.physicsOptionsChanged}/></OptionsPanel>
             <a role="button" className="reset-layout-link" onClick={this.resetLayoutButtonClicked}>Reset Layout</a>
-          </div>
+          </div> */}
         </div>
         <div className="service-traffic-map">
           <div style={{
